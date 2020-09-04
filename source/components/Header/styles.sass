@@ -1,0 +1,20 @@
+@import '~Styles/variables.sass'
+  
+header
+  display: flex
+
+.sb__toggler
+  width: $header-height
+  height: $header-height
+  padding: 15px
+  color: var(--secondary-color)
+  border-right: 1px solid #eee
+  cursor: pointer
+
+  &:hover
+    background-color: rgba(52, 50, 78, .1)
+    transition: background-color .3s
+
+.sb__toggler-icon
+  width: 100%
+  height: 100%
