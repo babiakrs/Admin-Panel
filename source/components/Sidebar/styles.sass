@@ -52,21 +52,5 @@ aside
     transition: background-color .3s
 
 .sb__section-item_link--active
-  &::after
-    display: block
-    position: absolute
-    right: -10px
-    top: 0
-    content: ""
-    width: 0
-    height: 0
-    border-top: 20px solid transparent
-    border-bottom: 20px solid transparent
-    border-left: $grid-gap solid var(--secondary-color)
-
-.sb__panel-version
-  position: absolute
-  bottom: 0
-  width: 100%
-  text-align: center
-  color: #8d8a98
+  border-left: 3px solid var(--primary-color)
+  background-color: rgba(255, 255, 255, .05)
