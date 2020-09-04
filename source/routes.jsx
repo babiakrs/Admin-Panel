@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
+import { Home } from 'Components/Home';
+import { Dashboard } from 'Components/Dashboard';
 import { Sidebar } from 'Components/Sidebar';
 import { Header } from 'Components/Header';
 
@@ -11,8 +13,8 @@ const Routes = () => (
 				<Sidebar />
 				<Header />
 				<main>
-					<Route path='/' exact/>
-					<Route path='/dashboard' exact/>
+					<Route path='/' component={Home} exact/>
+					<Route path='/dashboard' component={Dashboard}/>
 					<Route path='/calendar' exact/>
 					<Route path='/mailing' exact/>
 					<Route path='/tickets' exact/>
