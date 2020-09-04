@@ -108,7 +108,6 @@ function Sidebar() {
           </li>
         </ul>
       </div>
-      <div className='sb__panel-version'>v-1.dev</div>
     </aside>
   );
 }
