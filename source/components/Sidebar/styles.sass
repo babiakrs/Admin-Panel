@@ -30,10 +30,20 @@ aside
   list-style: none
   text-indent: 35px
 
-.sb__section-item
+.sb__section-icon
+  width: 1em
+  height: 1em
+  margin-right: 5px
+  position: relative
+  top: 2px
+
+.sb__section-item_link
+  position: relative
+  display: block
   height: 40px
   line-height: 40px
   color: #d7d4e2
+  text-decoration: none
   user-select: none
   cursor: pointer
 
@@ -41,12 +51,18 @@ aside
     background-color: rgba(255, 255, 255, .05)
     transition: background-color .3s
 
-.sb__section-icon
-  width: 1em
-  height: 1em
-  margin-right: 5px
-  position: relative
-  top: 2px
+.sb__section-item_link--active
+  &::after
+    display: block
+    position: absolute
+    right: -10px
+    top: 0
+    content: ""
+    width: 0
+    height: 0
+    border-top: 20px solid transparent
+    border-bottom: 20px solid transparent
+    border-left: $grid-gap solid var(--secondary-color)
 
 .sb__panel-version
   position: absolute

@@ -12,6 +12,19 @@ const Routes = () => (
 				<Header />
 				<main>
 					<Route path='/' exact/>
+					<Route path='/dashboard' exact/>
+					<Route path='/calendar' exact/>
+					<Route path='/mailing' exact/>
+					<Route path='/tickets' exact/>
+					<Route path='/create-user' exact/>
+					<Route path='/admins' exact/>
+					<Route path='/roles' exact/>
+					<Route path='/blacklist' exact/>
+					<Route path='/settings' exact/>
+					<Route path='/database' exact/>
+					<Route path='/themes' exact/>
+					<Route path='/status' exact/>
+					<Route path='/activities' exact/>
 				</main>
 			</Route>
 		</Switch>
