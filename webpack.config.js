@@ -152,7 +152,7 @@ module.exports = {
 			Reducers: path.resolve(SOURCE_PATH, 'reducers'),
 			Styles: path.resolve(SOURCE_PATH, 'sass'),
 			Services: path.resolve(SOURCE_PATH, 'services'),
-			Utils: path.resolve(SOURCE_PATH, 'utils.js'),
+			Utilities: path.resolve(SOURCE_PATH, 'utilities.js'),
 			Images: path.resolve(SOURCE_PATH, 'img')
 		}
 	},
