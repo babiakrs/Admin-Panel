@@ -96,8 +96,7 @@ module.exports = {
 						loader: 'css-loader',
 						options: {
 							sourceMap: !isProduction,
-							modules: true,
-							localIdentName: isProduction ? '[hash:base64:5]' : '[local]',
+							modules: false,
 							camelCase: true,
 							importLoaders: 1
 						}
