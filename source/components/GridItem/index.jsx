@@ -1,17 +1,20 @@
 import React from 'react';
-import { string } from 'prop-types';
+import { string, node } from 'prop-types';
 import { cn } from 'Utilities';
 
 import './styles.sass';
 
-function GridItem({ className }) {
+function GridItem({ className, children }) {
   return (
-    <div className={cn('grid__item', className)}></div>
+    <div className={cn('grid__item', className)}>
+      {children}
+    </div>
   );
 }
 
 GridItem.propTypes = {
-  className: string
+  className: string,
+  children: node
 };
 
 export { GridItem };

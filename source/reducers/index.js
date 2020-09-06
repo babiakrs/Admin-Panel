@@ -1,5 +1,6 @@
-// import { combineReducers } from 'redux';
+import { combineReducers } from 'redux';
+import { dashboardReducer } from './dashboard'
 
-// eslint-disable-next-line no-empty-function, no-extra-semi
-export default function(){};
-// export default combineReducers({});
+export default combineReducers({
+  dashboard: dashboardReducer
+});
