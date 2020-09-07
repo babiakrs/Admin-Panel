@@ -1,21 +1,31 @@
+@import '~Styles/variables.sass'
+  
 .db__layout
   width: 100%
   height: 100%
   display: grid
   grid-template-rows: 90px 1fr
-  grid-template-columns: 50% 50%
+  grid-template-columns: 1fr 1fr
   grid-gap: 10px
 
 .db__currencies
   grid-column: 1 / 3
   display: flex
-  justify-content: center
+  justify-content: space-around
+  padding: 10px
 
 .currencies__container
   width: 200px
   border-radius: 10px
-  margin: 10px
   padding: 10px
+  margin-right: 5px
+  transition: width .3s
+  
+  &:last-child
+    margin-right: 0
+
+  @media screen and (max-width: $screen-s)
+    width: 100px
 
 .currencies__pair,
 .currencies__rate
@@ -23,5 +33,11 @@
   font-weight: 600
   font-size: 1.4em
 
+  @media screen and (max-width: $screen-s)
+    font-size: 1em
+
 .currencies__rate
   font-size: 1.2em
+
+  @media screen and (max-width: $screen-s)
+    font-size: .9em
