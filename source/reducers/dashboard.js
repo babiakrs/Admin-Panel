@@ -16,9 +16,7 @@ export const dashboardReducer = (state = initialState, action) => {
     case DASHBOARD_RECEIVE: {
       return Object.assign({}, state, {
         isFetching: false,
-        data: {
-          currencies: action.payload
-        }
+        data: action.payload
       });
     }
 

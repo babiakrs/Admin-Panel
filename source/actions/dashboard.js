@@ -23,7 +23,7 @@ export const fetchDashboardData = () => {
   let dashboardService = new DashboardService();
   return (dispatch) => {
     dispatch(requestData());
-    dashboardService.getCurrencies()
+    dashboardService.getAll()
       .then(({ data }) => dispatch(receiveData(data)))
       .catch((err) => dispatch(receiveFailed(err)));
   };
