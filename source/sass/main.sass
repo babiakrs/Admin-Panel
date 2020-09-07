@@ -49,6 +49,15 @@ main
   overflow-y: auto
 
 
+body.sidebar__hidden
+  #root
+    grid-template-columns: 1fr
+
+  header,
+  main
+    grid-column: unset
+
+
 .loading__container
   width: 100%
   height: 100%

@@ -7,7 +7,7 @@ import thunk from 'redux-thunk';
 import reducers from 'Reducers';
 import initialState from 'Reducers/initial-state.js';
 import { ErrorBoundary } from 'Components/ErrorBoundary';
-import { Routes } from './routes';
+import { App } from 'Components/App';
 import 'Styles/main.sass';
 
 const store = createStore(
@@ -22,7 +22,7 @@ const store = createStore(
 render(
 	<Provider store={store}>
 		<ErrorBoundary>
-			<Routes />
+			<App/>
 		</ErrorBoundary>
 	</Provider>,
 	document.getElementById('root')
