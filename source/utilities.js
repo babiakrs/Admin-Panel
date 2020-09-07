@@ -17,3 +17,7 @@ export function removeClass(el, clazz) {
 export function toggleClass(el, clazz) {
   return hasClass(el, clazz) ? removeClass(el, clazz) : addClass(el, clazz);
 }
+
+export function numberFormat(num, thousands_separator = '\'') {
+  return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, thousands_separator);
+}
