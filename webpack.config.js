@@ -125,7 +125,7 @@ module.exports = {
 					{
 						loader: isProduction ? 'file-loader' : 'url-loader',
 						options: {
-							outputPath: 'static/images/',
+							outputPath: isProduction ? './static/images/' : 'static/images/',
 							name: '[hash:8].[ext]'
 						}
 					}, {
