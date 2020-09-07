@@ -12,6 +12,8 @@ aside
   font-weight: 600
   color: #eee
 
+  @media screen and (max-width: $screen-s)
+    display: none
 
 .sb__section
   width: 100%
@@ -30,6 +32,10 @@ aside
   list-style: none
   text-indent: 35px
 
+  @media screen and (max-width: $screen-s)
+    text-indent: 0
+    text-align: center
+
 .sb__section-icon
   width: 1em
   height: 1em
@@ -37,6 +43,13 @@ aside
   position: relative
   top: 2px
 
+  @media screen and (max-width: $screen-s)
+    margin: 0
+
+.sb__section-title
+  @media screen and (max-width: $screen-s)
+    display: none
+  
 .sb__section-item_link
   position: relative
   display: block

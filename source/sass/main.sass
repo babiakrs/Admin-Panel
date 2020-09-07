@@ -28,9 +28,12 @@ body
 #root
   height: 100vh
   display: grid
-  grid-template-columns: $sidebar-width 1fr
+  grid-template-columns: $sidebar-width-s 1fr
   grid-template-rows: $header-height 1fr
   grid-gap: $grid-gap
+
+  @media screen and (max-width: $screen-s)
+    grid-template-columns: $sidebar-width-xs 1fr
 
 aside
   box-shadow: var(--shadow-light)

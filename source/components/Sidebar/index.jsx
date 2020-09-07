@@ -15,31 +15,31 @@ function Sidebar() {
           <li className='sb__section-item'>
             <NavLink to='/' exact className='sb__section-item_link' activeClassName='sb__section-item_link--active'>
               <Icon className='sb__section-icon' type='home'/>
-              Home
+              <span className='sb__section-title'>Home</span>
             </NavLink>
           </li>
           <li className='sb__section-item'>
             <NavLink to='/dashboard' exact className='sb__section-item_link' activeClassName='sb__section-item_link--active'>
               <Icon className='sb__section-icon' type='o-meter'/>
-              Dashboard
+              <span className='sb__section-title'>Dashboard</span>
             </NavLink>
           </li>
           <li className='sb__section-item'>
             <NavLink to='/calendar' exact className='sb__section-item_link' activeClassName='sb__section-item_link--active'>
               <Icon className='sb__section-icon' type='calendar'/>
-              Calendar
+              <span className='sb__section-title'>Calendar</span>
             </NavLink>
           </li>
           <li className='sb__section-item'>
             <NavLink to='/mailing' exact className='sb__section-item_link' activeClassName='sb__section-item_link--active'>
               <Icon className='sb__section-icon' type='envelope'/>
-              Mailing
+              <span className='sb__section-title'>Mailing</span>
             </NavLink>
           </li>
           <li className='sb__section-item'>
             <NavLink to='/tickets' exact className='sb__section-item_link' activeClassName='sb__section-item_link--active'>
               <Icon className='sb__section-icon' type='bug'/>
-              Tickets
+              <span className='sb__section-title'>Tickets</span>
             </NavLink>
           </li>
         </ul>
@@ -50,25 +50,25 @@ function Sidebar() {
           <li className='sb__section-item'>
             <NavLink to='/create-user' exact className='sb__section-item_link' activeClassName='sb__section-item_link--active'>
               <Icon className='sb__section-icon' type='user-plus'/>
-              New
+              <span className='sb__section-title'>New</span>
             </NavLink>
           </li>
           <li className='sb__section-item'>
             <NavLink to='/admins' exact className='sb__section-item_link' activeClassName='sb__section-item_link--active'>
               <Icon className='sb__section-icon' type='user-admin'/>
-              Admins
+              <span className='sb__section-title'>Admins</span>
             </NavLink>
           </li>
           <li className='sb__section-item'>
             <NavLink to='/roles' exact className='sb__section-item_link' activeClassName='sb__section-item_link--active'>
               <Icon className='sb__section-icon' type='user-tag'/>
-              Roles
+              <span className='sb__section-title'>Roles</span>
             </NavLink>
           </li>
           <li className='sb__section-item'>
             <NavLink to='/blacklist' exact className='sb__section-item_link' activeClassName='sb__section-item_link--active'>
               <Icon className='sb__section-icon' type='users-slash'/>
-              Blacklist
+              <span className='sb__section-title'>Blacklist</span>
             </NavLink>
           </li>
         </ul>
@@ -79,31 +79,31 @@ function Sidebar() {
           <li className='sb__section-item'>
             <NavLink to='/settings' exact className='sb__section-item_link' activeClassName='sb__section-item_link--active'>
               <Icon className='sb__section-icon' type='cogs'/>
-              Panel
+              <span className='sb__section-title'>Panel</span>
             </NavLink>
           </li>
           <li className='sb__section-item'>
             <NavLink to='/database' exact className='sb__section-item_link' activeClassName='sb__section-item_link--active'>
               <Icon className='sb__section-icon' type='database'/>
-              Database
+              <span className='sb__section-title'>Database</span>
             </NavLink>
           </li>
           <li className='sb__section-item'>
             <NavLink to='/themes' exact className='sb__section-item_link' activeClassName='sb__section-item_link--active'>
               <Icon className='sb__section-icon' type='brush'/>
-              Themes
+              <span className='sb__section-title'>Themes</span>
             </NavLink>
           </li>
           <li className='sb__section-item'>
             <NavLink to='/status' exact className='sb__section-item_link' activeClassName='sb__section-item_link--active'>
               <Icon className='sb__section-icon' type='chart'/>
-              Server status
+              <span className='sb__section-title'>Server status</span>
             </NavLink>
           </li>
           <li className='sb__section-item'>
             <NavLink to='/activities' exact className='sb__section-item_link' activeClassName='sb__section-item_link--active'>
               <Icon className='sb__section-icon' type='ad'/>
-              Activities
+              <span className='sb__section-title'>Activities</span>
             </NavLink>
           </li>
         </ul>
