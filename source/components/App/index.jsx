@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import { Home } from 'Components/Home';
-import { Dashboard } from 'Components/Dashboard';
-import { Sidebar } from 'Components/Sidebar';
 import { Header } from 'Components/Header';
+import { Sidebar } from 'Components/Sidebar';
+import { Dashboard } from 'Components/Dashboard';
+import { Calendar } from 'Components/Calendar';
 
 import { toggleClass } from 'Utilities';
 
@@ -24,18 +25,18 @@ function App() {
           <main>
             <Route path='/' component={Home} exact/>
             <Route path='/dashboard' component={Dashboard}/>
-            <Route path='/calendar' exact/>
-            <Route path='/mailing' exact/>
-            <Route path='/tickets' exact/>
-            <Route path='/create-user' exact/>
-            <Route path='/admins' exact/>
-            <Route path='/roles' exact/>
-            <Route path='/blacklist' exact/>
-            <Route path='/settings' exact/>
-            <Route path='/database' exact/>
-            <Route path='/themes' exact/>
-            <Route path='/status' exact/>
-            <Route path='/activities' exact/>
+            <Route path='/calendar' component={Calendar}/>
+            <Route path='/mailing'/>
+            <Route path='/tickets'/>
+            <Route path='/create-user'/>
+            <Route path='/admins'/>
+            <Route path='/roles'/>
+            <Route path='/blacklist'/>
+            <Route path='/settings'/>
+            <Route path='/database'/>
+            <Route path='/themes'/>
+            <Route path='/status'/>
+            <Route path='/activities'/>
           </main>
         </Route>
       </Switch>
