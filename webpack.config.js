@@ -42,7 +42,19 @@ module.exports = {
 
 	optimization: {
 		splitChunks: {
-			chunks: 'all'
+			chunks: 'all',
+			cacheGroups: {
+				react: {
+					test: /[\\/]node_modules[\\/](react|react-dom)[\\/]/,
+					name: 'react',
+					chunks: 'all'
+				},
+				recharts: {
+					test: /[\\/]node_modules[\\/](recharts)[\\/]/,
+					name: 'recharts',
+					chunks: 'all'
+				}
+			}
 		},
 		runtimeChunk: true,
 		minimizer: [
@@ -125,7 +137,7 @@ module.exports = {
 					{
 						loader: isProduction ? 'file-loader' : 'url-loader',
 						options: {
-							outputPath: isProduction ? './static/images/' : 'static/images/',
+							outputPath: './static/images/',
 							name: '[hash:8].[ext]'
 						}
 					}, {
