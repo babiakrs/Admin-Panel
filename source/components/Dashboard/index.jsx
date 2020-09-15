@@ -20,6 +20,7 @@ import { numberFormat } from 'Utilities';
 import { fetchDashboardData } from 'Actions';
 import { GridItem } from 'Components/GridItem';
 import { Icon } from 'Components/Icon';
+import { ErrorMessage } from 'Components/ErrorMessage';
 
 import './styles.sass';
 
@@ -30,6 +31,16 @@ function Dashboard(props) {
     props.fetchDashboardData();
   }, []);
 
+
+  if (props.dashboard.fetchingError) {
+    return (
+      <ErrorMessage
+        errorTitle={props.dashboard.fetchingError.name}
+        errorText={props.dashboard.fetchingError.message}
+        reloadBtn={true}
+      />
+    );
+  }
 
   if (props.dashboard.isFetching) {
     return (
