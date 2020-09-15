@@ -6,6 +6,7 @@ import { Header } from 'Components/Header';
 import { Sidebar } from 'Components/Sidebar';
 import { Dashboard } from 'Components/Dashboard';
 import { Calendar } from 'Components/Calendar';
+import { Mailing } from'Components/Mailing';
 
 import { toggleClass } from 'Utilities';
 
@@ -26,8 +27,7 @@ function App() {
             <Route path='/' component={Home} exact/>
             <Route path='/dashboard' component={Dashboard}/>
             <Route path='/calendar' component={Calendar}/>
-            <Route path='/mailing'/>
-            <Route path='/tickets'/>
+            <Route path='/mailing' component={Mailing}/>
             <Route path='/create-user'/>
             <Route path='/admins'/>
             <Route path='/roles'/>

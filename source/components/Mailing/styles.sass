@@ -1,0 +1,61 @@
+.mailing_layout
+  background-color: var(--primary-color)
+  box-shadow: var(--shadow-light)
+  animation: scaleIn .3s
+
+.mailing__no-mails
+  text-align: center
+  padding: 15px 0
+  font-size: 1.3em
+  font-variant: all-small-caps
+
+.mailing_table
+  border: 1px solid #dedede
+  width: 100%
+  min-width: 1200px
+
+  thead
+    tr
+      background-color: #f6f6f6
+
+      th
+        font-variant: all-small-caps
+        font-size: 1.25em
+        line-height: 25px
+        user-select: none
+        cursor: pointer
+
+        svg
+          width: 15px
+          height: 12px
+          opacity: .5
+
+  tbody
+    tr
+      height: 30px
+      line-height: 30px
+      text-align: center
+
+      &:nth-child(2n)
+        background-color: #f6f6f6
+
+      td
+        padding: 5px 0
+
+[class^='mailing__act-btn']
+  margin-right: 3px
+  border: 1px solid
+  border-radius: 2px
+  background-color: var(--primary-color)
+  color: #444
+  cursor: pointer
+  vertical-align: middle
+
+  &:last-child
+    margin-right: 0
+
+  &:hover
+    background-color: var(--bg-color)
+
+.mailing__act-btn--delete
+  color: var(--color-red)

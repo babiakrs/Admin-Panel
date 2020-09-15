@@ -5,5 +5,10 @@ export default {
     data: {
       currencies: []
     }
+  },
+  mailing: {
+    fetchingError: false,
+    isFetching: false,
+    data: {}
   }
 };
