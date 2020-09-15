@@ -36,12 +36,6 @@ function Sidebar() {
               <span className='sb__section-title'>Mailing</span>
             </NavLink>
           </li>
-          <li className='sb__section-item'>
-            <NavLink to='/tickets' exact className='sb__section-item_link' activeClassName='sb__section-item_link--active'>
-              <Icon className='sb__section-icon' type='bug'/>
-              <span className='sb__section-title'>Tickets</span>
-            </NavLink>
-          </li>
         </ul>
       </div>
       <div className='sb__section'>
