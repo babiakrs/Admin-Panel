@@ -9,13 +9,11 @@ function ErrorMessage(props) {
 
   return (
     <div className='error'>
-      <div className={'error__container'}>
-        <Icon type='warning' width='80' height='80' className={'error__icon'} />
-        <h1 className={'error__title'}>{errorTitle}</h1>
-        <p className={'error__text'}>{errorText}</p>
-        {
-          reloadBtn && <button className={'error__button'} onClick={() => location.reload()}>Перезагрузить</button>
-        }
+      <div className='error__container'>
+        <Icon type='error' width='50' height='50' className='error__icon' />
+        <h1 className='error__title'>{errorTitle}</h1>
+        <p className='error__text'>{errorText}</p>
+        {reloadBtn && <button className='error__button' onClick={() => location.reload()}>Перезагрузить</button>}
       </div>
     </div>
   );
