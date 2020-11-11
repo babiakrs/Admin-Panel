@@ -53,12 +53,15 @@ aside
 header
   box-shadow: var(--shadow-light)
   background-color: var(--primary-color)
-  grid-column: 2 / 2
 
 main
-  grid-column: 2 / 2
   overflow-x: hidden
   overflow-y: auto
+
+header,
+main
+  grid-column: 2 / 2
+  width: calc(100% - 10px) // Fix over-width, 10px - grid's gap size
 
 
 body.sidebar__hidden
@@ -68,6 +71,7 @@ body.sidebar__hidden
   header,
   main
     grid-column: unset
+    margin: 0 auto
 
 
 .loading__container
