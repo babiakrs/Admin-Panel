@@ -106,3 +106,8 @@ dist
 
 # Build directory
 build/
+
+# Firebase files
+.firebase/
+.firebaserc
+firebase.json

@@ -66,7 +66,7 @@ function Mailing(props) {
   }
 
   if (_.isEmpty(props.mailing.data)) {
-    return <div className='mailing_layout mailing__no-mails'>Нет писем</div>;
+    return <div className='mailing_layout mailing__no-mails'>Empty</div>;
   }
 
   return (

@@ -68,7 +68,7 @@ function Dashboard(props) {
         }
       </GridItem>
       <GridItem>
-        <h3 className='db__chart-title'>Пользователи по странам</h3>
+        <h3 className='db__chart-title'>Users by country</h3>
         <ResponsiveContainer width='100%' height={300}>
           <BarChart data={data.users_from}>
             <CartesianGrid strokeDasharray='3 3'/>
@@ -80,7 +80,7 @@ function Dashboard(props) {
         </ResponsiveContainer>
       </GridItem>
       <GridItem>
-        <h3 className='db__chart-title'>Пользователи по странам</h3>
+        <h3 className='db__chart-title'>Users by country</h3>
         <ResponsiveContainer width='100%' height={300}>
           <RadarChart outerRadius={130} data={data.users_from}>
             <PolarGrid/>
