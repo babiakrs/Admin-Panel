@@ -23,8 +23,8 @@ class ErrorBoundary extends React.Component {
     if (this.state.hasError) {
       return (
         <ErrorMessage
-          errorTitle='что-то пошло не так! :('
-          errorText='в приложении произошла критическая ошибка!'
+          errorTitle='something went wrong! :('
+          errorText='error caught due the exception!'
           reloadBtn={true}
         />
       );

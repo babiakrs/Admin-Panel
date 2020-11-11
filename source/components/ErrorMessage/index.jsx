@@ -13,7 +13,7 @@ function ErrorMessage(props) {
         <Icon type='error' width='50' height='50' className='error__icon' />
         <h1 className='error__title'>{errorTitle}</h1>
         <p className='error__text'>{errorText}</p>
-        {reloadBtn && <button className='error__button' onClick={() => location.reload()}>Перезагрузить</button>}
+        {reloadBtn && <button className='error__button' onClick={() => location.reload()}>Reload</button>}
       </div>
     </div>
   );
