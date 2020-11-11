@@ -1,5 +1,36 @@
 # Admin-Panel
 ---
+### English:
+Stack:
+-
+* **React** -- ui-library
+* **React router** -- routes
+* **Redux** -- store
+* **Axios** -- API
+* **Recharts** -- charts
+* **Lodash** -- utilities
+
+
+Features:
+-
+* Scale-animation when components are showing;
+* Responsible layout;
+* Sidebar can be hide;
+* Working calendar;
+* The email table can be sorted by any column.
+
+
+Pages:
+-
+* **Main** section
+  - **Home** -- home page
+  - **Dashboard** -- some charts with API interaction
+  - **Calendar** -- simple canlendar
+  - **Mailing** -- mail
+
+---
+
+### Russian:
 Стэк:
 -
 * **React** -- ui-библиотека
@@ -28,14 +59,3 @@
   - **Dashboard** -- несколько графиков с загрузкой информации из вне
   - **Calendar** -- простой календарь
   - **Mailing** -- почтовый ящик
-* Секция **Users**
-  - **New** -- создать нового пользователя
-  - **Admins** -- список администраторов
-  - **Roles** -- список ролей
-  - **Blacklist** -- черный список
-* Секция **Settings**
-  - **Panel** -- настройки панели
-  - **Database** -- настройки базы данных
-  - **Themes** -- настройки оформления
-  - **Server status** -- информацмя по серверу
-  - **Activities** -- активность пользователей
