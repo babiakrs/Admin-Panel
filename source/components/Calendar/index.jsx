@@ -12,6 +12,10 @@ const WEEKDAYS_NAMES = [ 'mo', 'tu', 'we', 'th', 'fr', 'sa', 'su' ];
 const MONTHS_NAMES = [ 'january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december' ];
 
 function Calendar() {
+  useEffect(() => {
+    document.title = 'Admin Panel • Calendar';
+  }, []);
+
   const [ now, updateNow ] = useState(new Date);
   const [ cellArray, updateCellArray ] = useState([]);
 
