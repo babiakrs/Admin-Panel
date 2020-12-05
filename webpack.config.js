@@ -132,7 +132,7 @@ module.exports = {
 					}
 				]
 			}, {
-				test: /\.(png|jpe?g|svg|gif)$/,
+				test: /\.(png|jpe?g|svg|gif|webp)$/,
 				use: [
 					{
 						loader: isProduction ? 'file-loader' : 'url-loader',
